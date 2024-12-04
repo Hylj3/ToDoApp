@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+</head>
+<body>
+    <h1>To-Do App</h1>
+    <input type="text" id="taskInput" placeholder="Lisää tehtävä">
+    <button onclick="addTask()">Lisää tehtävä</button>
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById('taskInput');
+            if (taskInput.value) {
+                alert('Tehtävä lisätty: ' + taskInput.value);
+                taskInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
